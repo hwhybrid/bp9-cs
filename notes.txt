@@ -1,0 +1,41 @@
+
+
+Observations from running code through different approaches to the same result
+
+
+console.log('Results for the extraLargeArray');
+console.log("insert", resultsInsert.preciseWords);
+console.log("append", resultsAppend.preciseWords);
+
+Take note of the timing result for the extraLargeArray results– comparing when the extraLargeArray is passed to doublerAppend and doublerInsert.
+
+
+Results for the extraLargeArray
+insert 788.047625 ms
+append 1.803833 ms
+-----------------
+Results for the tinyArray
+insert 15.208 μs
+append 65.458 μs
+-----------------
+Results for the smallArray
+insert 5.833 μs
+append 1.708 μs
+-----------------
+Results for the mediumArray
+insert 87.875 μs
+append 5.708 μs
+-----------------
+Results for the largeArray
+insert 6.116208 ms
+append 56.458 μs
+
+
+
+Extra Credit:
+THe slowest funtion is the insert method and it is lower because 
+it requires moving each element after the inserted element(s) 
+over by a count of 1. This becomes incredibly costly in terms 
+of time-complexity as the larger the input the longer it will 
+take to complete the action of shifting each and evey element 
+in a larger array.
