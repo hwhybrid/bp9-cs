@@ -70,9 +70,9 @@ let tinyResultsInsert = perf.stop();
 
 // smallArray Results:
 // Try it with first function
-perf.start();                     // Starts timer
+perf.start();                    
 doublerAppend(smallArray);
-let smallResultsAppend = perf.stop();  // Stops timer and save time results
+let smallResultsAppend = perf.stop(); 
 
 // Try it with second function
 perf.start();
@@ -82,9 +82,9 @@ let smallResultsInsert = perf.stop();
 
 // mediumArray Results:
 // Try it with first function
-perf.start();                     // Starts timer
+perf.start();                     
 doublerAppend(mediumArray);
-let mediumResultsAppend = perf.stop();  // Stops timer and save time results
+let mediumResultsAppend = perf.stop(); 
 
 // Try it with second function
 perf.start();
@@ -94,9 +94,9 @@ let mediumResultsInsert = perf.stop();
 
 // largeArray Results:
 // Try it with first function
-perf.start();                     // Starts timer
+perf.start();                    
 doublerAppend(largeArray);
-let largeResultsAppend = perf.stop();  // Stops timer and save time results
+let largeResultsAppend = perf.stop();  
 
 // Try it with second function
 perf.start();
@@ -108,6 +108,7 @@ console.log('Results for the extraLargeArray');
 console.log("insert", resultsInsert.preciseWords); // insert 859.706458 ms
 console.log("append", resultsAppend.preciseWords); // append 1.784417 ms
 console.log('-----------------');
+
 console.log('Results for the tinyArray');
 console.log("insert", tinyResultsInsert.preciseWords); // insert 15.208 μs
 console.log("append", tinyResultsAppend.preciseWords); // append 65.458 μs

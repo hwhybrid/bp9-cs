@@ -1,6 +1,8 @@
 
 
-Observations from running code through different approaches to the same result
+Observations from running code through different approaches to the same result:
+
+
 
 
 console.log('Results for the extraLargeArray');
