@@ -2,14 +2,25 @@
 
 Observations from running code through different approaches to the same result:
 
+Scaling of each function:
+The results from running the methods on the different inputs clearly indicates the efficiency of the 
+append method over theinsert method. As the size of the input array increases so does the execution time.
+
+This indicates the scaling ability of each function. Depending on the nature of a project and the 
+intentions the execution time may or may not pose a signifcant issue. 
+For larger and more critical projects a more efficient approach that gets one closer to a 
+more constant value for execution would be ideal if at all possible.
+
+Extra Credit:
+THe slowest funtion is the insert method and it is lower because 
+it requires moving each element after the inserted element(s) 
+over by a count of 1. This becomes incredibly costly in terms 
+of time-complexity as the larger the input the longer it will 
+take to complete the action of shifting each and evey element 
+in a larger array.
 
 
 
-console.log('Results for the extraLargeArray');
-console.log("insert", resultsInsert.preciseWords);
-console.log("append", resultsAppend.preciseWords);
-
-Take note of the timing result for the extraLargeArray results– comparing when the extraLargeArray is passed to doublerAppend and doublerInsert.
 
 ~~~Table of runtime comparisons~~~
 
@@ -33,12 +44,3 @@ Results for the largeArray
 insert 6.116208 ms
 append 56.458 μs
 
-
-
-Extra Credit:
-THe slowest funtion is the insert method and it is lower because 
-it requires moving each element after the inserted element(s) 
-over by a count of 1. This becomes incredibly costly in terms 
-of time-complexity as the larger the input the longer it will 
-take to complete the action of shifting each and evey element 
-in a larger array.
