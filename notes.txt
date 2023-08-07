@@ -11,6 +11,7 @@ console.log("append", resultsAppend.preciseWords);
 
 Take note of the timing result for the extraLargeArray results– comparing when the extraLargeArray is passed to doublerAppend and doublerInsert.
 
+~~~Table of runtime comparisons~~~
 
 Results for the extraLargeArray
 insert 788.047625 ms
